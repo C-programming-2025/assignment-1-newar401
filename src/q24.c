@@ -1,1 +1,16 @@
-// Create an expression that checks if a given number is a perfect square.
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if (sqrt(n) == (int)sqrt(n)) {
+        printf("%d is a perfect square.\n", n);
+    } else {
+        printf("%d is not a perfect square.\n", n);
+    }
+
+    return 0;
+}
